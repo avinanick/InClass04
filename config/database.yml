@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: blog_development
+  database: blog_production
   username: nick
   password: nra2stoca
