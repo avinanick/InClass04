@@ -36,3 +36,17 @@ Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/scaffolds.self-ce383de54c91adc26639c98eb799b50136c32dfc209da93f5a62f345da7606f9.css?body=1" for 127.0.0.1 at 2015-10-19 12:56:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-19 13:09:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nick/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 50ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-10-19 13:09:24 -0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (20.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 359ms (Views: 336.5ms | ActiveRecord: 20.8ms)
